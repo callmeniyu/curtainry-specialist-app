@@ -1,36 +1,172 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Curtainry - Specialist Platform
 
-## Getting Started
+A beautiful, professional Progressive Web App for Curtainry specialists (consultants and fitters) built with Next.js 15, TypeScript, and Tailwind CSS.
 
-First, run the development server:
+## 🚀 Features
+
+### ✅ Phase 1 - Specialist Onboarding (Completed)
+- **Beautiful Loading Screen** - 3-second animated splash with Curtainry branding
+- **Specialist-Focused Landing Page** - Targeting consultants and fitters
+- **Role-Based Authentication** - Support for curtain consultants and fitters only
+- **Professional UI Components** - Clean, business-focused design
+
+### 🔄 Upcoming Phases
+- **Consultant Dashboard** - Booking management and customer communication
+- **Fitter Dashboard** - Job scheduling and installation tracking
+- **Digital Measurement Tools** - In-app measurement capture
+- **Customer Communication** - Chat and update systems
+- **Earnings & Analytics** - Income tracking and performance metrics
+
+## 🎯 Target Users
+
+### 👔 Curtain Consultants
+- Provide expert advice to customers
+- Take accurate measurements
+- Communicate with retailers
+- Manage consultation bookings
+
+### 🔧 Curtain Fitters
+- Handle professional installations
+- Manage repair and maintenance services
+- Track job progress
+- Coordinate with consultants
+
+## 🎨 Design System
+
+### Color Palette
+- **Primary**: #2563EB (Professional Blue)
+- **Primary Dark**: #1E40AF
+- **Primary Shade**: #E5E7EB (Light Gray)
+- **Background**: #FFFFFF (Clean White)
+- **Text**: #212121 (Professional Dark)
+- **Text Muted**: #6B7280 (Subtle Gray)
+
+### Typography
+- **Font Family**: Inter (Professional, readable)
+- **Mobile-First**: Optimized for specialist field work
+
+## 🛠 Tech Stack
+
+- **Frontend**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **State Management**: React useState (upgrading to Zustand)
+- **Authentication**: NextAuth.js (planned)
+- **Database**: MongoDB (planned)
+- **Real-time**: WebSockets (planned)
+
+## 📱 Specialist User Flow
+
+1. **Loading Screen** (3 seconds)
+   - Professional Curtainry branding
+   - "Specialist Platform" messaging
+
+2. **Landing Page**
+   - Clear value proposition for specialists
+   - Benefits: Steady Income, Flexible Schedule, Business Growth
+   - Testimonials from existing specialists
+
+3. **Authentication**
+   - Role selection (Consultant vs Fitter)
+   - Professional onboarding flow
+   - "Join Our Team" messaging
+
+## 🚦 Getting Started
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+curtainry-specialist-app/
+├── app/
+│   ├── page.tsx           # Main page with state management
+│   ├── layout.tsx         # Root layout with HTML/body
+│   └── globals.css        # Global styles and animations
+├── components/
+│   ├── LoadingScreen.tsx  # Professional loading experience
+│   ├── LandingPage.tsx    # Specialist-focused landing
+│   ├── AuthModal.tsx      # Consultant/Fitter authentication
+│   ├── Header.tsx         # Navigation component
+│   ├── Footer.tsx         # Footer component
+│   └── index.ts           # Component exports
+└── sections/
+    ├── Hero.tsx           # Hero section
+    ├── Services.tsx       # Services overview
+    └── index.ts           # Section exports
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎯 Key Features Implemented
 
-## Learn More
+### 🎨 Professional Loading Experience
+- Animated logo with professional branding
+- "Specialist Platform" messaging
+- Progress indicator for smooth onboarding
 
-To learn more about Next.js, take a look at the following resources:
+### 📱 Specialist-Focused Landing
+- Clear value propositions for consultants and fitters
+- Benefits showcase (income, flexibility, growth)
+- Professional testimonials
+- Business-focused design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🔐 Role-Based Authentication
+- **Curtain Consultant** option with expert consultation focus
+- **Curtain Fitter** option with installation/maintenance focus
+- Professional "Join Our Team" messaging
+- Clean business onboarding flow
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ✨ Professional Animations
+- Smooth transitions optimized for business users
+- Hover effects for interactive elements
+- Professional color scheme throughout
 
-## Deploy on Vercel
+## 🔮 Next Development Phase
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Consultant Dashboard Features
+1. **Booking Calendar** - Manage consultation appointments
+2. **Customer Profiles** - Track client preferences and history
+3. **Measurement Tools** - Digital measurement capture
+4. **Retailer Communication** - Direct messaging with curtain retailers
+5. **Earnings Tracking** - Commission and payment history
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Fitter Dashboard Features
+1. **Job Queue** - Installation and maintenance jobs
+2. **Route Optimization** - Efficient job scheduling
+3. **Progress Tracking** - Real-time job status updates
+4. **Photo Documentation** - Before/after installation photos
+5. **Customer Feedback** - Service quality ratings
+
+### Technical Improvements
+1. **Real-time Notifications** - Job updates and messages
+2. **GPS Integration** - Location-based job matching
+3. **Photo Upload** - Cloud storage for work documentation
+4. **Offline Support** - Work in areas with poor connectivity
+5. **Performance Analytics** - Specialist performance metrics
+
+## 👥 Team
+
+- **Senior Developer**: AI Assistant
+- **Project Owner**: Curtainry Team
+- **Target Users**: Curtain Consultants & Fitters
+
+## 📄 License
+
+Private project - All rights reserved
+
+---
+
+**Ready for specialist dashboard development!** 🚀
+
+The specialist onboarding experience is professional and compelling. Time to build the tools that will empower consultants and fitters to grow their businesses.

@@ -13,6 +13,7 @@ module.exports = {
           light: "#60A5FA",   // optional hover/light variant
           dark: "#1E40AF",    // optional darker variant
         },
+        "primary-dark": "#1E40AF", // alias for primary.dark
         "primary-shade": "#E5E7EB", // soft gray shade
         background: "#FFFFFF",
         text: {
